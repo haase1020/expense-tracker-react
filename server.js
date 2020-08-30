@@ -15,6 +15,9 @@ const { use } = require('./routes/transactions');
 const app = express();
 
 app.use(express.json());
+if (process.env.NODE_ENV === 'developement') {
+  app.use(morgan('dev'));
+}
 
 app.use('/api/v1/transactions', transactions);
 
