@@ -44,7 +44,9 @@ export const AddTransaction = () => {
             placeholder='Enter amount...'
           />
         </div>
-        <button className='btn'>add transaction</button>
+        <button className='btn' data-cy='addTransactionButton'>
+          add transaction
+        </button>
       </form>
     </>
   );
