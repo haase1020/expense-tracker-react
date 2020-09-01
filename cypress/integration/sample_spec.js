@@ -1,8 +1,6 @@
-<reference types='cypress' />; //in the course, 3 lines at beginning
-
 describe('our first suite', () => {
   it('first test', () => {
-    cy.visit('/');
+    cy.visit('http://localhost:3000/');
     cy.contains('Expense Tracker');
 
     // by tag name
@@ -34,5 +32,15 @@ describe('our first suite', () => {
 
     // //most recommended way by cypress (create own attributes)
     // cy.get('[data-cy="inputEmail1"]');
+  });
+
+  it('second test', () => {
+    cy.visit('http://localhost:3000/');
+    cy.contains('Expense Tracker');
+  });
+
+  it.only('then and wrap methods', () => {
+    cy.visit('http://localhost:3000/');
+    cy.contains('Expense Tracker');
   });
 });

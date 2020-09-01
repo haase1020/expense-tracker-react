@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://localhost:3000/",
+  "projectId": "kv4yzn",
   "ignoreTestFiles": "**/examples/*",
   "viewportHeight": 1080,
   "viewportWidth": 1920
