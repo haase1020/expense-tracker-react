@@ -1,15 +1,15 @@
-///  <reference types="cypress" />
+<reference types='cypress' />; //in the course, 3 lines at beginning
 
 describe('our first suite', () => {
   it('first test', () => {
     // by tag name
-    cy.get('');
+    cy.get('p');
 
     // by ID
-    cy.get('#');
+    cy.get('#money-plus'); // no ids in this project
 
     // by class name
-    cy.get('.');
+    cy.get('.money');
 
     //by attribute name
     cy.get('[placeholder]');

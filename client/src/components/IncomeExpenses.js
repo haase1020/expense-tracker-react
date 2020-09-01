@@ -21,7 +21,9 @@ export const IncomeExpenses = () => {
     <div className='inc-exp-container'>
       <div>
         <h4>Income</h4>
-        <p className='money plus'>${numberWithCommas(income)}</p>
+        <p id='money-plus' className='money plus'>
+          ${numberWithCommas(income)}
+        </p>
       </div>
       <div>
         <h4>Expense</h4>
